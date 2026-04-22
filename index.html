@@ -1,96 +1,329 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>MY COURSEWORK</title>
-	<style>
-		body{
-			font-family:Arial, sans-serif;
-			background-color:#87CEEB;
-			margin:0;
-			padding:20px;
-		}
-		h1{
-			text-align:center;
-			color:#333;
-		}
-		table{
-			width:100%;
-			border-collapse:collapse;
-			bacgkground:skyblue;
-			box-shadow:0 4px 10px rgba(0,0,0,0.1);
-			border:1;
-		}
-		th{
-			background-color:#c8a2c8;
-			color:black;
-		}
-		td{
-			padding:15px;
-		}
-		h2{
-			color:#0077b5;
-		}
-	</style>
-</head>
-<html>
-<body style="max-width:900px; margin:auto;">
-  
-	<table style="width:100%; border-collapse:collapse;" cellpadding="10" cellspacing="0">
-		<tr>
-<th colspan="2" style="padding:20px; background:#eef5fb;">
-	<table width="100%">
-		<tr>
-			<td width=30%" style="text-align:center;">
-	<img src="me.jpg" alt="image failed" width="150"
-    style="border-radius:50%; border:4px solid #0077b5; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
-			</td>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MY PROFILE - </title>
 
-			<td width="70%" style="vertical-align:middle;">
-				<h1 style="margin:0; text-align:left;">NAME: NAMUGGA MARTHA</h1>
-				<p style="margin:5px 0; text-align:left;">
-					EMAIL: marthabeatrice56@gmail.com<br> REG/NO: 24/U/ITD/09459/PD<br>PHONE: +256775894090<br>ADDRESS: KAMPALA-UGANDA</p>
-			</td>
-</tr>
-		</table>
-</th>
-		</tr>
-		
-		<tr>
-				<td style="background:blue; border-radius:8px;"><b>EDUCATION BACKGROUND</b>
-			<ol>
-				<li>St.Josephs' SSS Naggalama (2016-2021)</li>
-				<li>Namagunga Primary Boarding School (2009-2016)</li>
-				<li>Victorious Education Services (2007-2009)</li>
-			</ol>
-					</td>
-				<td syle="background:#fafafa; border-radius:8px;"><b>SKILLS & HOBBIES</b>
-			<ul>
-				<li>Skills:
-				<ul>
-					<li>HTML</li>
-					<li>Basic C++</li>
-					<li>Graphics</li>
-				</ul>
-					<li>Hobbies:
-						<ul>
-							<li>Eating</li>
-							<li>Walking</li>
-							<li>Music</li>
-						</ul>
-				</li>
-			</ul>
-			</td>
-			</tr>
-		<tr>
-		<td colspan="2" syle="background:#fafafa; border-radius:8px; color:white; background-color: blue; font-family:Arial;">I am pleased to have learnt HTML and I thank my lecturers for doing such a wonderful job.<br> I am super proud of myself as well for being able to create this all on my own!<br> I have had a really had time just know.</td>
-		</tr>
-		<tr>
-			<td colspan="2" align="center" syle="background:#fafafa; border-radius:8px; vertical-align:middle">
-				<b>CONTACT INFO</b><br><br>
-		<img src="whatsapp.png" width="20px" height="20px"> 0468346576
-				<img src="tickock.png" width="20px" height="20px"> marizaariza
-				<img src="instagram.jpeg" width="20px" height="20px">marizaariiza@28
-				</td>
-		</tr>
-	</table>
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  body{
+    font-family: "Arial", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #bfe9ff, #e6f7ff);
+    color:#1a1a1a;
+    line-height:1.6;
+  }
+
+  .container{
+    max-width:900px;
+    margin:45px auto;
+    background:#ffffff;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+    padding:30px;
+    border-top:8px solid #0f4c75;
+  }
+
+  h1{
+    text-align:center;
+    color:#0f4c75;
+    letter-spacing:3px;
+    margin-bottom:18px;
+  }
+
+  .top-section{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    align-items:center;
+    margin-bottom:25px;
+  }
+
+  .profile img{
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #3282b8;
+  }
+
+  .bio-table{
+    flex:1;
+    width:100%;
+    border-collapse:collapse;
+  }
+
+  .bio-table td{
+    padding:9px;
+    border-bottom:1px solid #eee;
+  }
+
+  .bio-table td:first-child{
+    font-weight:600;
+    color:#0f4c75;
+    width:160px;
+  }
+
+  .bio-table tr:hover{
+    background:#f0fbff;
+  }
+
+  .section{
+    margin-top:35px;
+  }
+
+  h2{
+    color:#3282b8;
+    margin-bottom:10px;
+    padding-left:10px;
+    border-left:6px solid #0f4c75;
+  }
+
+  .styled-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    border-radius:8px;
+    overflow:hidden;
+  }
+
+  .styled-table th{
+    background:#0f4c75;
+    color:white;
+    padding:10px;
+    text-align:left;
+  }
+
+  .styled-table td{
+    padding:10px;
+    border:1px solid #e6e6e6;
+  }
+
+  .styled-table tr:nth-child(even){
+    background:#f7fbff;
+  }
+
+  .styled-table tr:hover{
+    background:#e3f2fd;
+  }
+
+  .contact-links a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:8px 0;
+    text-decoration:none;
+    color:#0f4c75;
+    font-weight:600;
+    padding:6px 8px;
+    border-radius:6px;
+    transition:0.3s ease;
+  }
+
+  .contact-links a:hover{
+    background:#e6f7ff;
+    transform:translateX(6px);
+  }
+
+  .contact-links img{
+    width:20px;
+  }
+
+  @media(max-width:600px){
+    .top-section{
+      flex-direction:column;
+      text-align:center;
+    }
+  }
+
+  @media (prefers-color-scheme: light){
+    body{
+      background:#0b1d2a;
+      color:#eaeaea;
+    }
+
+    .container{
+      background:#162635;
+      border-top:8px solid #4fc3f7;
+    }
+
+    h1, h2{
+      color:#4fc3f7;
+    }
+
+    .bio-table tr:hover{
+      background:#1f3547;
+    }
+
+    .styled-table tr:nth-child(even){
+      background:#1a2b3a;
+    }
+
+    .styled-table tr:hover{
+      background:#22384d;
+    }
+
+    .styled-table td{
+      border:1px solid #2a3c4f;
+    }
+
+    .contact-links a{
+      color:#4fc3f7;
+    }
+
+    .contact-links a:hover{
+      background:#1a2b3a;
+    }
+  }
+	.two-columns{
+  display:flex;
+  gap:20px;
+  margin-top:15px;
+  flex-wrap:wrap;
+}
+
+.box{
+  flex:1;
+  min-width:300px;
+}
+
+.box h3{
+  color:#0f4c75;
+  margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>MY PROFILE</h1>
+
+  <div class="top-section">
+    <div class="profile">
+      <img src="me.jpg" alt="Image failed">
+    </div>
+
+    <table class="bio-table">
+      <tr><td>Name</td><td>NAMUGGA MARTHA </td></tr>
+      <tr><td>Phone</td><td>+256 775 894 090</td></tr>
+      <tr><td>Email</td><td>marthabeatrice56@gmail.com</td></tr>
+      <tr><td>Address</td><td>Kampala-Uganda</td></tr>
+      <tr><td>Status</td><td>Student</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>About Me</h2>
+    <p>
+      I ama student at Kyambogo University pursuing a Bachelor's Degree in Information Technology and Computing.<br>
+    </p>
+    <p>
+      I am happy I got to learn HTML language. It is fun to learn and practice.
+    </p>
+  </div>
+
+  <div class="section">
+  <h2>Education, Skills & Hobbies</h2>
+
+  <div class="two-columns">
+
+    <div class="box">
+      <h3>Education</h3>
+      <table class="styled-table">
+        <tr>
+          <th>Qualification</th>
+          <th>Institution</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>Bachelor of IT & Computing</td>
+          <td>Kyambogo University</td>
+          <td>Expected Graduation: 2027<br>Networking, Programming, Databases, Cloud & AI</td>
+        </tr>
+        <tr>
+          <td>UACE</td>
+          <td>St. Joseph’s Girls SS Nsambya</td>
+          <td>Completed: 2021</td>
+        </tr>
+        <tr>
+          <td>UCE</td>
+          <td>St. Joseph’s SS Nagalama</td>
+          <td>Completed: 2023</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- RIGHT SIDE: SKILLS + HOBBIES -->
+    <div class="box">
+      <h3>Skills</h3>
+      <ul>
+        <li>Networking (LAN setup, subnetting)</li>
+        <li>Programming (C basics)</li>
+        <li>Cloud Computing (AWS basics)</li>
+        <li>IT Support & Troubleshooting</li>
+        <li>Microsoft Office & VS Code</li>
+      </ul>
+
+      <h3 style="margin-top:20px;">Hobbies</h3>
+      <ul>
+        <li>Reading tech articles</li>
+        <li>Gaming</li>
+        <li>Exploring new technologies</li>
+        <li>Team collaboration projects</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+  <div class="section">
+    <h2>Technical Skills</h2>
+    <table class="styled-table">
+      <tr><th>Category</th><th>Details</th></tr>
+      <tr><td>Networking</td><td>LAN setup, subnetting, Cisco tools</td></tr>
+      <tr><td>Programming</td><td>C Programming basics</td></tr>
+      <tr><td>Cloud & AI</td><td>AWS introduction, ML basics</td></tr>
+      <tr><td>IT Support</td><td>Hardware troubleshooting, OS installation</td></tr>
+      <tr><td>Tools</td><td>VS Code, MS Office</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <table class="styled-table">
+      <tr><th>Project</th><th>Description</th></tr>
+      <tr><td>Network Simulation</td><td>Cisco Packet Tracer office setup</td></tr>
+      <tr><td>AWS Learning</td><td>Explored cloud AI tools</td></tr>
+      <tr><td>Team Collaboration</td><td>Group coding exercises and reviews</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Achievements</h2>
+    <table class="styled-table">
+      <tr><th>Achievement</th></tr>
+      <tr><td>Completed ALX Program</td></tr>
+      <tr><td>Networking & AWS Certifications</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Contact Links</h2>
+    <div class="contact-links">
+      <a href="https://wa.me/256748017795">WhatsApp</a>
+      <a href="https://linkedin.com/in/clare-mutoni-2342902bb">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+
+</div>
+
 </body>
 </html>
